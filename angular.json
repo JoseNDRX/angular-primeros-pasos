@@ -3,6 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "02-bases": {
       "projectType": "application",
       "schematics": {
@@ -22,6 +23,21 @@
     "standalone": false
   }
 },
+=======
+    "GitApp": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
+>>>>>>> eb6afdb (Fin sección 7)
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -29,7 +45,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/02-bases",
+=======
+            "outputPath": "dist/git-app",
+>>>>>>> eb6afdb (Fin sección 7)
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -75,10 +95,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "02-bases:build:production"
             },
             "development": {
               "buildTarget": "02-bases:build:development"
+=======
+              "buildTarget": "GitApp:build:production"
+            },
+            "development": {
+              "buildTarget": "GitApp:build:development"
+>>>>>>> eb6afdb (Fin sección 7)
             }
           },
           "defaultConfiguration": "development"
